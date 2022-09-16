@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@700&family=Roboto&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --cor-primaria: #F06;   
+    --cor-texto: #FFF;
+    --bg-padrao: #111;
+    --bg-destaque: #2d2d2d;
+    --font-padrao: 'Roboto', sans-serif;
+}
+
+body{
+    background-color: var(--bg-padrao);
+    font-family: var(--font-padrao);
+}
+
+header{
+    height: 3.15rem;
+    display: flex;
+    background-color: var(--bg-destaque);
+}
+
+h1{
+    color: var(--cor-primaria);
+    font-family: 'Montserrat', cursive;
+    font-size: 2rem;
+    border-left: #F06;
+}
+
+#titulo{
+    color: var(--cor-primaria);
+    text-transform: uppercase;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 3rem;
+}
+
+nav{
+    display: flex;
+    align-items: flex-end;
+}
+
+nav ul{
+    display: flex;
+}
+
+nav li{
+    list-style: none;
+    margin: 0.9rem;
+}
+
+a{
+    color: var(--cor-texto);
+    font-size: 1.1rem;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.secao-elenco{
+    display: flex;
+}
+
+.card-elenco{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--bg-destaque);
+    width: 150px;
+    height: 300px;
+    border-radius: 5px;
+    margin: .8rem;
+}
+
+.card-elenco img{
+    display: flex;
+    width: 150px;
+    height: 200px;
+}
+
+.card-elenco p{
+    size: .5rem;
+    margin: auto;
+    color: var(--cor-texto);
+}
